@@ -27,3 +27,23 @@
   --ghost-white: #ecedf3;
   --purple-overlay: rgba(152, 100, 218, 0.9);
 }
+
+/* reusable flexbox classes */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* reusable Hero classes */
+
+.hero-btn {
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 20px;
+  font-weight: 800;
+}

@@ -1,0 +1,56 @@
+/* Hero section */
+
+.navbar {
+  width: 70%;
+  position: absolute;
+  top: 70px;
+  bottom: auto;
+  left: 20%;
+  right: 0%;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+}
+
+.hero-container-parent {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+.hero-container-left {
+  height: 100%;
+  align-items: end;
+  padding-right: 2rem;
+  justify-content: center;
+  background-image: url("../Assets/hero/hero-left.png");
+  background-size: cover;
+}
+
+.hero-left-content {
+  width: 80%;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.hero-container-right {
+  height: 100%;
+  background-image: url("../Assets/hero/hero-right.png");
+  padding-left: 2rem;
+  justify-content: center;
+  background-size: cover;
+}
+
+.hero-right-content {
+  gap: 2rem;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.black-btn {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.white-btn {
+  background-color: var(--white);
+}
