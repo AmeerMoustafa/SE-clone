@@ -1,3 +1,7 @@
+/* Font Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;900&display=swap");
+
 /* CSS Reset */
 
 * {
@@ -28,6 +32,13 @@
   --purple-overlay: rgba(152, 100, 218, 0.9);
 }
 
+/* Universal body styles */
+
+body {
+  font-family: "Noto Sans Mono", sans-serif;
+  font-size: 16px;
+}
+
 /* reusable flexbox classes */
 
 .flex {
@@ -45,5 +56,7 @@
   cursor: pointer;
   text-align: center;
   padding: 15px 20px;
+  font-size: 1rem;
   font-weight: 800;
+  white-space: nowrap;
 }
