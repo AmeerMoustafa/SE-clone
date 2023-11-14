@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="Styles/utilities.css" />
     <link rel="stylesheet" href="Styles/index.css" />
+    <script src="./Scripts/index.js" defer></script>
   </head>
   <body>
     <section class="hero-container-parent flex">
@@ -21,12 +22,13 @@
         </div>
       </nav>
 
-      <div class="flex-col hero-container-left">
-        <div class="flex-col hero-left-content">
+      <div class="flex-col hero-container hero-container-left">
+        <div class="flex-col hero-content hero-left-content">
           <h1 class="flex-col">
-            <span class="hero-left-subtitle">WANT TO BECOME A </span><br /><span
-              class="hero-title-left"
-              >SOFTWARE ENGINEER?</span
+            <span class="hero-subtitle hero-left-subtitle"
+              >WANT TO BECOME A </span
+            ><br /><span id="typewriter-text" class="hero-title-left"
+              >SOFTWARE ENGINEER?<span class="typed-cursor">_</span></span
             >
           </h1>
           <p class="hero-description">
@@ -38,13 +40,11 @@
           <button class="hero-btn black-btn">#GET_TRAINED</button>
         </div>
       </div>
-      <div class="flex-col hero-container-right">
-        <div class="flex-col hero-right-content">
+      <div class="flex-col hero-container hero-container-right">
+        <div class="flex-col hero-content hero-right-content">
           <h1 class="flex-col">
-            <span class="hero-right-subtitle">WANT TO HIRE</span><br /><span
-              class="hero-title-right"
-              >JOB-READY TECH TALENT?</span
-            >
+            <span class="hero-subtitle hero-right-subtitle">WANT TO HIRE</span
+            ><br /><span class="hero-title-right">JOB-READY TECH TALENT?</span>
           </h1>
           <p class="hero-description">
             Look no further than our comprehensive talent matching and placement
@@ -53,6 +53,33 @@
             your success.
           </p>
           <button class="hero-btn white-btn">#HIRE_TALENT</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex hello-world-parent">
+      <div class="flex-col hello-world-child">
+        <div class="flex title-wrapper">
+          <div>
+            <span class="title-symbol">></span>
+            <span class="title-text">Hello World!</span>
+          </div>
+
+          <div class="flex title-icon-wrapper">
+            <div class="title-icon black-icon"></div>
+            <div class="title-icon grey-icon"></div>
+            <div class="title-icon green-icon"></div>
+          </div>
+        </div>
+
+        <div class="flex hello-world-video-container">
+          <iframe
+            src="https://www.youtube.com/embed/vG7SYQjODTs?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen="true"
+            title="Graduates | FSW 21-22"
+          ></iframe>
         </div>
       </div>
     </section>

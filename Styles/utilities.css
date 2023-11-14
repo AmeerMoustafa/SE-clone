@@ -39,6 +39,8 @@ body {
   font-size: 16px;
 }
 
+/* reusable container styles */
+
 /* reusable flexbox classes */
 
 .flex {
@@ -52,6 +54,29 @@ body {
 
 /* reusable Hero classes */
 
+.hero-container {
+  height: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  background-size: cover;
+}
+
+.hero-content {
+  gap: 2rem;
+  max-width: 670px;
+}
+
+.hero-description {
+  flex-grow: 1;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  padding: 0px 10px;
+}
+
 .hero-btn {
   cursor: pointer;
   text-align: center;
@@ -59,4 +84,46 @@ body {
   font-size: 1rem;
   font-weight: 800;
   white-space: nowrap;
+}
+
+/* reusable title classes */
+
+.title-wrapper {
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2rem;
+}
+
+.title-symbol {
+  color: var(--sef_primary);
+}
+
+.title-text {
+  color: var(--black);
+  text-align: left;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.title-icon-wrapper {
+  gap: 1rem;
+}
+
+.title-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+}
+
+.black-icon {
+  background-color: var(--black-2);
+}
+
+.grey-icon {
+  background-color: var(--grey);
+}
+
+.green-icon {
+  background-color: var(--sef_primary);
 }
