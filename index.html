@@ -160,14 +160,16 @@
         <!-- Tab bar -->
         <div class="flex-col program-selection-parent">
           <div class="flex tabs-menu">
-            <a class="active-tab">FCS</a>
-            <a>FSW</a>
-            <a>FSD</a>
-            <a>UIX</a>
+            <a id="fcs-tab" class="active-tab fcs-tab" data-tab-target="#fcs"
+              >FCS</a
+            >
+            <a id="fsw-tab" data-tab-target="#fsw">FSW</a>
+            <a id="fsd-tab" data-tab-target="#fsd">FSD</a>
+            <a id="uix-tab" data-tab-target="#uix">UIX</a>
           </div>
 
           <!-- FCS -->
-          <div class="flex program-tab">
+          <div class="flex program-tab selected-tab" id="fcs" data-tab-content>
             <div class="flex-col program-content">
               <div class="flex-col program-content-main">
                 <h1>
@@ -200,7 +202,7 @@
           </div>
 
           <!-- FSW -->
-          <div class="flex program-tab">
+          <div class="flex program-tab" id="fsw" data-tab-content>
             <div class="flex-col program-content">
               <div class="flex-col program-content-main">
                 <h1>
@@ -238,7 +240,7 @@
           </div>
 
           <!-- FSD -->
-          <div class="flex program-tab">
+          <div class="flex program-tab" id="fsd" data-tab-content>
             <div class="flex-col program-content">
               <div class="flex-col program-content-main">
                 <h1><span class="fsd-title">> FSD:</span> Full-Stack Data</h1>
@@ -272,7 +274,7 @@
           </div>
 
           <!-- UI/UX -->
-          <div class="flex program-tab">
+          <div class="flex program-tab" id="uix" data-tab-content>
             <div class="flex-col program-content">
               <div class="flex-col program-content-main">
                 <h1>
@@ -309,6 +311,63 @@
               alt="UI-UX bootcamp"
             />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex parent-container hire-talent-parent">
+      <div class="flex-col child-container">
+        <div class="flex title-wrapper">
+          <div>
+            <span class="title-symbol">></span>
+            <span class="title-text">Hire talent</span>
+          </div>
+
+          <div class="flex title-icon-wrapper">
+            <div class="title-icon white-icon"></div>
+            <div class="title-icon grey-icon"></div>
+            <div class="title-icon green-icon"></div>
+          </div>
+        </div>
+
+        <div class="flex-col recruitment-container">
+          <h2>Become a Recruitment Partner</h2>
+
+          <span class="recruitment-subheading"
+            ><strong>220+</strong> companies from over
+            <strong>10</strong> countries have joined our network since
+            <strong>2016</strong></span
+          >
+          <div class="flex-col recruitment-list-container">
+            <ol>
+              <li>
+                Exclusive, direct and streamlined access to our graduating
+                cycles
+              </li>
+              <li>
+                Canditate insights from instructors and personalized
+                recommendations
+              </li>
+              <li>Interview at will</li>
+              <li>
+                Tech talks participation and engagement with students
+                opportunities
+              </li>
+            </ol>
+
+            <span
+              >Are you on the hunt for exceptional rising junior developers?
+              Look no further than SE Factory!</span
+            >
+          </div>
+
+          <a>CONTACT US ></a>
+        </div>
+
+        <div class="hr-factory-container">
+          <span>Want to launch a local team?</span>
+          <span>check out</span>
+          <img src="./Assets/logos/hr-factory.svg" alt="hr-factory" />
         </div>
       </div>
     </section>

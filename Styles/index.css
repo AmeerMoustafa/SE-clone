@@ -219,10 +219,6 @@
   background-color: var(--ylw_primary);
 }
 
-.program-tab img {
-  width: 40%;
-}
-
 .program-selection-parent {
   width: 90%;
 }
@@ -268,6 +264,7 @@
 /* FSD */
 
 .fsd-image {
+  min-height: 440px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -283,6 +280,8 @@
 /* UI/UX */
 
 .ux-image {
+  min-height: 440px;
+  width: 100%;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -293,4 +292,76 @@
 
 .ux-confirmation {
   color: var(--pink_primary);
+}
+
+/* Styles for handling tab selection in programs */
+
+[data-tab-content] {
+  display: none;
+}
+
+.selected-tab[data-tab-content] {
+  display: flex;
+}
+
+.fcs-tab {
+  color: var(--ylw_primary);
+}
+
+.fsw-tab {
+  color: var(--sef_primary);
+}
+
+.fsd-tab {
+  color: var(--ppl_primary);
+}
+
+.uix-tab {
+  color: var(--pink_primary);
+}
+
+/* Hire Talent */
+
+.hire-talent-parent {
+  background-color: var(--black);
+}
+
+.hire-talent-parent .title-text {
+  color: var(--white);
+}
+
+.recruitment-container {
+  width: 90%;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 4rem;
+  background-color: var(--black-2);
+  border-radius: 20px;
+}
+
+.recruitment-container > h2 {
+  color: var(--white);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.recruitment-subheading {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 1rem;
+}
+
+.recruitment-subheading > strong {
+  color: var(--sef_primary);
+}
+
+.recruitment-list-container {
+  font-weight: 400;
+  gap: 1rem;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.recruitment-list-container ol {
+  padding-left: 40px;
 }
