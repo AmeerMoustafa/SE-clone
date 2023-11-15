@@ -199,6 +199,98 @@
 
 /* Programs styles */
 
+.programs-title {
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.programs-title > .title-text {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.programs-title > .title-symbol {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 .programs-container-parent {
   background-color: var(--ylw_primary);
+}
+
+.program-tab img {
+  width: 40%;
+}
+
+.program-selection-parent {
+  width: 90%;
+}
+
+.tabs-menu a {
+  cursor: pointer;
+  padding: 20px 50px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.active-tab {
+  background-color: var(--black);
+}
+
+.program-content h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white);
+}
+
+/* FCS */
+
+.fcs-title {
+  color: var(--ylw_primary);
+}
+
+.fcs-confirmation {
+  color: var(--ylw_primary);
+}
+
+/* FSW */
+
+.fsw-title {
+  color: var(--sef_primary);
+}
+
+.fsw-confirmation {
+  color: var(--sef_primary);
+}
+
+/* FSD */
+
+.fsd-image {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fsd-title {
+  color: var(--ppl_primary);
+}
+
+.fsd-confirmation {
+  color: var(--ppl_primary);
+}
+
+/* UI/UX */
+
+.ux-image {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ux-title {
+  color: var(--pink_primary);
+}
+
+.ux-confirmation {
+  color: var(--pink_primary);
 }
