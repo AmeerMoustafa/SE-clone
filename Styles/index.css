@@ -333,8 +333,8 @@
 .recruitment-container {
   width: 90%;
   align-items: flex-start;
-  gap: 1rem;
-  padding: 4rem;
+  gap: 1.5rem;
+  padding: 3rem;
   background-color: var(--black-2);
   border-radius: 20px;
 }
@@ -356,12 +356,35 @@
 }
 
 .recruitment-list-container {
-  font-weight: 400;
   gap: 1rem;
+  font-weight: 400;
   color: var(--white);
   font-size: 0.9rem;
 }
 
 .recruitment-list-container ol {
   padding-left: 40px;
+}
+
+.recruitment-contact {
+  color: var(--white);
+  font-weight: 800;
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  justify-content: end;
+  background-color: var(--black);
+  text-align: right;
+}
+
+.hr-factory-container {
+  color: var(--white);
+  font-weight: 300;
+  width: 90%;
+  gap: 2rem;
+  font-size: 1.2rem;
+  padding: 1rem 2.2rem;
+  align-items: center;
+  justify-content: end;
+  border-radius: 20px;
+  background-color: var(--black-2);
 }
