@@ -41,6 +41,18 @@ body {
 
 /* reusable container styles */
 
+.parent-container {
+  padding: 4.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-container {
+  align-items: center;
+  gap: 4rem;
+  width: 80%;
+}
+
 /* reusable flexbox classes */
 
 .flex {
@@ -90,7 +102,7 @@ body {
 
 .title-wrapper {
   width: 90%;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   font-size: 2.2rem;
 }
@@ -126,4 +138,8 @@ body {
 
 .green-icon {
   background-color: var(--sef_primary);
+}
+
+.white-icon {
+  background-color: var(--white);
 }
