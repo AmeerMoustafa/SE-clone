@@ -39,6 +39,7 @@
 .hero-container-left {
   align-items: flex-end;
   padding-right: 2rem;
+
   background-image: url("../Assets/hero/hero-left.png");
 }
 

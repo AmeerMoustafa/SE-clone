@@ -6,11 +6,47 @@ let current_text_index = 0;
 let current_message = text_array[current_text_index];
 let word_index = 0;
 
+// Handling background and text change
+const handleStyleChanges = () => {
+  const hero_description =
+    document.getElementsByClassName("hero-description")[0];
+  const hero_background = document.getElementsByClassName(
+    "hero-container-left"
+  )[0];
+
+  if (current_text_index === 0) {
+    hero_background.style.setProperty(
+      "background-image",
+      "linear-gradient(rgba(40, 238, 167, 0.93), rgba(40, 238, 167, 0.93)), url('../Assets/hero/hero-left.png')"
+    );
+
+    hero_description.style.setProperty("color", "var(--black-2");
+
+    typewriter_text.style.setProperty("color", "var(--black-2)");
+  } else if (current_text_index === 1) {
+    hero_background.style.setProperty(
+      "background-image",
+      "linear-gradient(rgba(152, 100, 218, 0.93), rgba(152, 100, 218, 0.93)), url('../Assets/hero/hero-left.png')"
+    );
+
+    hero_description.style.setProperty("color", "var(--white");
+    typewriter_text.style.setProperty("color", "var(--white)");
+  } else if (current_text_index === 2) {
+    hero_background.style.setProperty(
+      "background-image",
+      "linear-gradient(rgba(251, 80, 142, 0.93), rgba(251, 80, 142, 0.93)), url('../Assets/hero/hero-left.png')"
+    );
+    hero_description.style.setProperty("color", "var(--white");
+    typewriter_text.style.setProperty("color", "var(--white)");
+  }
+};
+
 const typewriter = () => {
   // Add a letter to the text until we reach the length of the string in our text array
   if (word_index < current_message.length) {
     typewriter_text.textContent += current_message.charAt(word_index);
     word_index++;
+    handleStyleChanges();
     setTimeout(typewriter, 100);
     // When we reach the end of our string length start letters from the end.
   } else {
