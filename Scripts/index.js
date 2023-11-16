@@ -1,3 +1,39 @@
+// Functions for handling the typewriter effect
+
+let typewriter_text = document.getElementById("typewriter-text");
+let text_array = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+let current_text_index = 0;
+let current_message = text_array[current_text_index];
+let word_index = 0;
+
+const typewriter = () => {
+  // Add a letter to the text until we reach the length of the string in our text array
+  if (word_index < current_message.length) {
+    typewriter_text.textContent += current_message.charAt(word_index);
+    word_index++;
+    setTimeout(typewriter, 100);
+    // When we reach the end of our string length start letters from the end.
+  } else {
+    if (typewriter_text.textContent.length > 0) {
+      typewriter_text.textContent = typewriter_text.textContent.slice(0, -1);
+
+      setTimeout(typewriter, 100);
+    } else {
+      current_text_index++;
+      if (current_text_index === 3) {
+        current_text_index = 0;
+      }
+
+      current_message = text_array[current_text_index];
+      word_index = 0;
+
+      setTimeout(typewriter, 1000);
+    }
+  }
+};
+
+typewriter();
+
 // functions for handling program tabs
 
 // remove classes from all tabs
