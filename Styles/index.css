@@ -62,6 +62,11 @@
   color: var(--white);
 }
 
+.typed-cursor {
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
 .hero-left-content > h1 {
   text-align: end;
   font-size: 1rem;
@@ -105,6 +110,26 @@
 
 .white-btn {
   background-color: var(--white);
+}
+
+/* animations for the blinking effect */
+
+.blink {
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Hello World Section */

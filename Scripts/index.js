@@ -39,8 +39,11 @@ const handleStyleChanges = (typewriter_text) => {
 
 const typewriter = () => {
   let typewriter_text = document.getElementById("typewriter-text");
+  let blinking_cursor = document.getElementById("cursor");
   let text_array = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
   let current_message = text_array[current_text_index];
+  blinking_cursor.classList.add("blink");
+
   // Add a letter to the text until we reach the length of the string in our text array
   if (word_index < current_message.length) {
     typewriter_text.textContent += current_message.charAt(word_index);
@@ -49,6 +52,7 @@ const typewriter = () => {
     setTimeout(typewriter, 100);
     // When we reach the end of our string length start letters from the end.
   } else {
+    blinking_cursor.classList.remove("blink");
     if (typewriter_text.textContent.length > 0) {
       typewriter_text.textContent = typewriter_text.textContent.slice(0, -1);
 
