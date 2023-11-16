@@ -1,4 +1,5 @@
 // Global functions for keeping track of word and array indices.
+let blinking_cursor = document.getElementById("cursor");
 let current_text_index = 0;
 let word_index = 0;
 
@@ -11,6 +12,7 @@ const handleStyleChanges = (typewriter_text) => {
   )[0];
 
   if (current_text_index === 0) {
+    blinking_cursor.style.setProperty("color", "var(--black-2)");
     hero_background.style.setProperty(
       "background-image",
       "linear-gradient(rgba(40, 238, 167, 0.93), rgba(40, 238, 167, 0.93)), url('../Assets/hero/hero-left.png')"
@@ -20,6 +22,7 @@ const handleStyleChanges = (typewriter_text) => {
 
     typewriter_text.style.setProperty("color", "var(--black-2)");
   } else if (current_text_index === 1) {
+    blinking_cursor.style.setProperty("color", "var(--white)");
     hero_background.style.setProperty(
       "background-image",
       "linear-gradient(rgba(152, 100, 218, 0.93), rgba(152, 100, 218, 0.93)), url('../Assets/hero/hero-left.png')"
@@ -28,6 +31,7 @@ const handleStyleChanges = (typewriter_text) => {
     hero_description.style.setProperty("color", "var(--white");
     typewriter_text.style.setProperty("color", "var(--white)");
   } else if (current_text_index === 2) {
+    blinking_cursor.style.setProperty("color", "var(--white)");
     hero_background.style.setProperty(
       "background-image",
       "linear-gradient(rgba(251, 80, 142, 0.93), rgba(251, 80, 142, 0.93)), url('../Assets/hero/hero-left.png')"
@@ -39,7 +43,6 @@ const handleStyleChanges = (typewriter_text) => {
 
 const typewriter = () => {
   let typewriter_text = document.getElementById("typewriter-text");
-  let blinking_cursor = document.getElementById("cursor");
   let text_array = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
   let current_message = text_array[current_text_index];
   blinking_cursor.classList.add("blink");
