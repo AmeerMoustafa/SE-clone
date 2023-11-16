@@ -388,3 +388,10 @@
   border-radius: 20px;
   background-color: var(--black-2);
 }
+
+/* Testimonial classes */
+
+.testimonial-carousel {
+  border-radius: 10px;
+  width: 90%;
+}

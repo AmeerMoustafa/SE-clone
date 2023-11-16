@@ -214,3 +214,56 @@ a {
   flex: 1;
   text-align: right;
 }
+
+/* Reusable testimonial classes */
+
+.testimonial {
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--black);
+}
+
+.testimonial p {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.testimonial-image {
+  border-radius: 20px;
+  width: 30%;
+}
+
+.testimonial-content {
+  margin-left: 4rem;
+  width: 60%;
+  gap: 2rem;
+}
+
+.testimonial-quotemark {
+  width: 8%;
+}
+
+.testimonial-subcontent {
+  gap: 1rem;
+}
+
+.testimonial-subcontent img {
+  border-radius: 50%;
+  width: 8%;
+}
+
+.testimonial-name {
+  color: var(--white);
+  font-weight: 900;
+}
+
+.testimonial-title {
+  color: var(--white);
+}
+
+.testimonial-title strong {
+  color: var(--sef_primary);
+}
