@@ -62,7 +62,7 @@ const typewriter = () => {
       current_message = text_array[current_text_index];
       word_index = 0;
 
-      setTimeout(typewriter, 1000);
+      setTimeout(typewriter, 500);
     }
   }
 };
