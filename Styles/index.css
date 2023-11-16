@@ -38,13 +38,14 @@
 
 .hero-container-left {
   align-items: flex-end;
-  padding-right: 2rem;
+  padding-right: 4rem;
   background-image: url("../Assets/hero/hero-left.png");
 }
 
 .hero-left-content {
   color: var(--white);
   align-items: flex-end;
+  text-align: end;
 }
 
 .hero-container-left h1 {
@@ -79,7 +80,7 @@
       rgba(35, 35, 35, 0.85)
     ),
     url("../Assets/hero/hero-right.png");
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
 
 .hero-right-content {
@@ -97,6 +98,7 @@
 }
 
 .hero-right-subtitle {
+  margin-top: 0.5rem;
   background-color: var(--white);
   color: var(--black);
 }
