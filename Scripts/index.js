@@ -1,13 +1,9 @@
-// Functions for handling the typewriter effect
-
-let typewriter_text = document.getElementById("typewriter-text");
-let text_array = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+// Global functions for keeping track of word and array indices.
 let current_text_index = 0;
-let current_message = text_array[current_text_index];
 let word_index = 0;
 
 // Handling background and text change
-const handleStyleChanges = () => {
+const handleStyleChanges = (typewriter_text) => {
   const hero_description =
     document.getElementsByClassName("hero-description")[0];
   const hero_background = document.getElementsByClassName(
@@ -42,11 +38,14 @@ const handleStyleChanges = () => {
 };
 
 const typewriter = () => {
+  let typewriter_text = document.getElementById("typewriter-text");
+  let text_array = ["SOFTWARE ENGINEER?", "DATA ENGINEER?", "UI/UX DESIGNER?"];
+  let current_message = text_array[current_text_index];
   // Add a letter to the text until we reach the length of the string in our text array
   if (word_index < current_message.length) {
     typewriter_text.textContent += current_message.charAt(word_index);
     word_index++;
-    handleStyleChanges();
+    handleStyleChanges(typewriter_text);
     setTimeout(typewriter, 100);
     // When we reach the end of our string length start letters from the end.
   } else {
@@ -67,8 +66,6 @@ const typewriter = () => {
     }
   }
 };
-
-typewriter();
 
 // functions for handling program tabs
 
@@ -128,4 +125,7 @@ const handleProgramTabs = () => {
   });
 };
 
-handleProgramTabs();
+window.addEventListener("load", () => {
+  typewriter();
+  handleProgramTabs();
+});
