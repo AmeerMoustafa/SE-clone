@@ -459,3 +459,13 @@
 .active-testimonial-button {
   background-color: var(--black-2);
 }
+
+/* FAQ section */
+
+.faq-parent {
+  background-color: var(--black);
+}
+
+.faq-parent .title-text {
+  color: var(--white);
+}
