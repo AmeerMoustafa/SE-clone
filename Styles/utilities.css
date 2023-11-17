@@ -233,6 +233,7 @@ a {
 }
 
 .testimonial-image {
+  object-fit: fill;
   border-radius: 20px;
   width: 30%;
 }
@@ -251,6 +252,10 @@ a {
   gap: 1rem;
 }
 
+.testimonial-subcontent strong {
+  color: var(--sef_primary);
+}
+
 .testimonial-subcontent img {
   border-radius: 50%;
   width: 8%;
@@ -263,8 +268,4 @@ a {
 
 .testimonial-title {
   color: var(--white);
-}
-
-.testimonial-title strong {
-  color: var(--sef_primary);
 }

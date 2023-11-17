@@ -132,7 +132,41 @@ const handleProgramTabs = () => {
   });
 };
 
+// functions for handling testimonial switching
+
+const removeActive = (testimonial_target) => {
+  testimonial_target.forEach((testimonial) => {
+    testimonial.classList.remove("active-testimonial-button");
+  });
+};
+
+const changeTestimonial = () => {
+  const testimonial_tabs = document.querySelectorAll("[data-testimonial-tab]");
+  const testimonial_target = document.querySelectorAll(
+    "[data-testimonial-target]"
+  );
+
+  testimonial_target.forEach((testimonial) => {
+    testimonial.addEventListener("click", () => {
+      removeActive(testimonial_target);
+
+      testimonial.classList.add("active-testimonial-button");
+
+      testimonial_tabs.forEach((tab) => {
+        tab.classList.remove("active-testimonial");
+      });
+
+      const target = document.querySelector(
+        testimonial.dataset.testimonialTarget
+      );
+
+      target.classList.add("active-testimonial");
+    });
+  });
+};
+
 window.addEventListener("load", () => {
   typewriter();
   handleProgramTabs();
+  changeTestimonial();
 });

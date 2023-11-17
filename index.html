@@ -377,7 +377,7 @@
     </section>
 
     <!-- Testimonials section -->
-    <section class="flex-col parent-container">
+    <section class="flex-col parent-container testimonials-parent-container">
       <div class="flex-col child-container">
         <div class="flex title-wrapper">
           <div>
@@ -393,7 +393,12 @@
         </div>
 
         <div class="testimonial-carousel">
-          <div class="flex testimonial">
+          <!-- Zeina -->
+          <div
+            id="zeina"
+            class="flex testimonial active-testimonial"
+            data-testimonial-tab
+          >
             <div class="flex-col testimonial-content">
               <img
                 class="testimonial-quotemark"
@@ -427,7 +432,133 @@
               alt="zeina"
             />
           </div>
+
+          <!-- Zakaria -->
+          <div id="zakaria" class="flex testimonial" data-testimonial-tab>
+            <div class="flex-col testimonial-content">
+              <img
+                class="testimonial-quotemark"
+                src="./Assets/logos/quote-mark.svg"
+              />
+              <p>
+                Looking back, I cannot believe that only a year ago, I knew
+                almost nothing about programming, and now I am a professional
+                software engineer working remotely for a startup located in
+                Norway. The boot camp was a life-changing experience for me.
+              </p>
+
+              <div class="flex testimonial-subcontent">
+                <img
+                  src="./Assets/testimonials/testimonials-zakaria.png"
+                  alt="Zakaria"
+                />
+                <div>
+                  <span class="testimonial-name"
+                    ><strong>Zakaria</strong> T.</span
+                  ><br />
+                  <span class="testimonial-title"
+                    >> SEF alumna working at <strong>Celsia</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+            <img
+              class="testimonial-image"
+              src="./Assets/testimonials/testimonials-zakaria.png"
+              alt="Zakaria"
+            />
+          </div>
+
+          <!-- Rayan -->
+          <div id="rayan" class="flex testimonial" data-testimonial-tab>
+            <div class="flex-col testimonial-content">
+              <img
+                class="testimonial-quotemark"
+                src="./Assets/logos/quote-mark.svg"
+              />
+              <p>
+                Hiring skilled engineers has never been easy. With SE Factory,
+                this became super easy and effective. Candidates are
+                well-trained and we get to see their strengths before hiring,
+                which is perfect for a growing startup.
+              </p>
+
+              <div class="flex testimonial-subcontent">
+                <img
+                  src="./Assets/testimonials/testimonials-rayan.jpeg"
+                  alt="Zakaria"
+                />
+                <div>
+                  <span class="testimonial-name"
+                    ><strong>Rayan</strong> Najdi</span
+                  ><br />
+                  <span class="testimonial-title"
+                    >> Lebanon, <strong>Geek Express</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+            <img
+              class="testimonial-image"
+              src="./Assets/testimonials/testimonials-rayan.jpeg"
+              alt="Rayan"
+            />
+          </div>
+
+          <!-- Rabih -->
+          <div id="rabih" class="flex testimonial" data-testimonial-tab>
+            <div class="flex-col testimonial-content">
+              <img
+                class="testimonial-quotemark"
+                src="./Assets/logos/quote-mark.svg"
+              />
+              <p>
+                Our business is expanding thanks to talented and dedicated team
+                members that we hired through SE Factory. Looking forward to
+                hiring more developers from them as we grow.
+              </p>
+
+              <div class="flex testimonial-subcontent">
+                <img
+                  src="./Assets/testimonials/testimonials-rabih.jpeg"
+                  alt="Zakaria"
+                />
+                <div>
+                  <span class="testimonial-name"
+                    ><strong>Rabih</strong> Chaar</span
+                  ><br />
+                  <span class="testimonial-title"
+                    >> UAE, <strong>Nadeera</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+            <img
+              class="testimonial-image"
+              src="./Assets/testimonials/testimonials-rabih.jpeg"
+              alt="Rabih"
+            />
+          </div>
         </div>
+      </div>
+
+      <div class="flex testimonial-slider-container">
+        <div
+          class="testimonial-slider-button active-testimonial-button"
+          data-testimonial-target="#zeina"
+        ></div>
+        <div
+          class="testimonial-slider-button"
+          data-testimonial-target="#zakaria"
+        ></div>
+        <div
+          class="testimonial-slider-button"
+          data-testimonial-target="#rayan"
+        ></div>
+        <div
+          class="testimonial-slider-button"
+          data-testimonial-target="#rabih"
+        ></div>
       </div>
     </section>
   </body>

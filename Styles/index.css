@@ -418,7 +418,44 @@
 
 /* Testimonial classes */
 
+.testimonials-parent-container {
+  gap: 6rem;
+  padding-bottom: 1rem;
+}
+
 .testimonial-carousel {
   border-radius: 10px;
   width: 90%;
+}
+
+.testimonial-slider-container {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.testimonial-slider-button {
+  background-color: var(--grey);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.testimonial-slider-button:hover {
+  cursor: pointer;
+}
+
+/* Styles for selecting different testimonials */
+
+[data-testimonial-tab] {
+  display: none;
+}
+
+.active-testimonial[data-testimonial-tab] {
+  display: flex;
+}
+
+.active-testimonial-button {
+  background-color: var(--black-2);
 }
